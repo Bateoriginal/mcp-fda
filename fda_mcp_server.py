@@ -28,7 +28,7 @@ from mcp.server.fastmcp import FastMCP
 # ---------------------------------------------------------------------------
 
 BASE_URL = "https://api.fda.gov"
-USER_AGENT = "openfda-mcp/1.0"
+USER_AGENT = "mcp-fda/1.0"
 
 ROOT = Path(__file__).parent
 CONFIG_PATH = ROOT / "config.json"

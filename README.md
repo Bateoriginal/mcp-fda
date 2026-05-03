@@ -19,8 +19,8 @@ An [MCP](https://modelcontextprotocol.io/) server that exposes [openFDA](https:/
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # 2. Clone and install
-git clone https://github.com/<your-handle>/openfda-mcp.git
-cd openfda-mcp
+git clone https://github.com/Bateoriginal/mcp-fda.git
+cd mcp-fda
 uv sync                 # creates .venv and installs runtime + dev deps
 
 # 3. Add your API key
@@ -61,7 +61,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
     "openfda": {
       "command": "uv",
       "args": [
-        "--directory", "/ABSOLUTE/PATH/TO/openfda-mcp",
+        "--directory", "/ABSOLUTE/PATH/TO/mcp-fda",
         "run", "python", "fda_mcp_server.py"
       ]
     }
@@ -179,7 +179,7 @@ openFDA exposes labels, approvals, NDCs, recalls, shortages, FAERS, MAUDE, 510(k
 ## Project layout
 
 ```
-openfda-mcp/
+mcp-fda/
 ├── fda_mcp_server.py            # MCP server (FastMCP + httpx) — 26 tools, 6 prompts
 ├── config.example.json          # Copy to config.json and add your openFDA key
 ├── .vscode/mcp.json.example     # Copy to .vscode/mcp.json for VS Code MCP discovery
