@@ -1,5 +1,5 @@
 [project]
-name = "rhizome-fda"
+name = "openfda-mcp"
 version = "0.1.0"
 description = "An MCP server that exposes openFDA (drugs, devices, labels, recalls, FAERS) as scenario-shaped tools for any MCP host."
 readme = "README.md"

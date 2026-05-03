@@ -1,4 +1,4 @@
-# Rhizome — openFDA MCP server
+# openFDA MCP server
 
 An [MCP](https://modelcontextprotocol.io/) server that exposes [openFDA](https://open.fda.gov/) — the FDA's public API for drug, device, and food data — as **26 scenario-shaped tools** and **6 guided prompts** any MCP host (Claude Desktop, VS Code, Cursor, …) can call in natural language.
 
@@ -19,8 +19,8 @@ An [MCP](https://modelcontextprotocol.io/) server that exposes [openFDA](https:/
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # 2. Clone and install
-git clone https://github.com/<your-handle>/rhizome.git
-cd rhizome
+git clone https://github.com/<your-handle>/openfda-mcp.git
+cd openfda-mcp
 uv sync                 # creates .venv and installs runtime + dev deps
 
 # 3. Add your API key
@@ -61,7 +61,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
     "openfda": {
       "command": "uv",
       "args": [
-        "--directory", "/ABSOLUTE/PATH/TO/rhizome",
+        "--directory", "/ABSOLUTE/PATH/TO/openfda-mcp",
         "run", "python", "fda_mcp_server.py"
       ]
     }
@@ -179,7 +179,7 @@ openFDA exposes labels, approvals, NDCs, recalls, shortages, FAERS, MAUDE, 510(k
 ## Project layout
 
 ```
-rhizome/
+openfda-mcp/
 ├── fda_mcp_server.py            # MCP server (FastMCP + httpx) — 26 tools, 6 prompts
 ├── config.example.json          # Copy to config.json and add your openFDA key
 ├── .vscode/mcp.json.example     # Copy to .vscode/mcp.json for VS Code MCP discovery
