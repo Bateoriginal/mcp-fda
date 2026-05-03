@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local secrets (contains openFDA API key)
+config.json
+
+# Local-only exploration & large data dumps — do not publish
+archive/
+
+# Personal MCP host config (use mcp.json.example as the template)
+.vscode/mcp.json
+
+# Test / tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "openfda": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "${workspaceFolder}",
+        "run",
+        "python",
+        "fda_mcp_server.py"
+      ]
+    }
+  }
+}
